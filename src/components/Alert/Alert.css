@@ -1,0 +1,31 @@
+
+.alertForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    background: rgba(160, 154, 154, 0.5);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 40px;   
+}
+.formGroup{
+    margin: 15px 5px;
+}
+.formGroup label{
+   font-size: 16px;
+}
+.formGroup input{
+    font-size: 16px;
+    float: right;
+    padding: 3px;
+}
+.formGroup input:focus{
+    outline: none;
+}
+.alertForm button{
+    margin: 5px;
+    padding: 5px 10px;
+    float: right;
+    font-size: 16px;
+}
