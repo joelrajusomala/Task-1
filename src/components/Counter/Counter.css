@@ -1,0 +1,29 @@
+#counter {
+    width: 350px;
+    display: flex;
+    margin: 50px auto;
+}
+
+.btn {
+    background-color: teal;
+    font-size: 14px;
+    width: 15%;
+    margin: 0 40px;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px black;
+}
+button:disabled{
+    box-shadow: none;
+    background: #d8dada;
+    color: black;
+    cursor: default;
+}
+
+#counter p {
+width: 30px;
+text-align: center;
+}

@@ -4,18 +4,18 @@ import ListItems from './ListItems'
 
 class TodoList extends Component {
 
-constructor(props) {
-    super(props)
+    constructor (props) {
+        super(props)
 
-    this.state = {
-        items: [],
-        currentItem: {
-            text: '',
-            key: ''
+        this.state = {
+            items: [],
+            currentItem: {
+                text: '',
+                key: ''
+            }
         }
     }
-    }
-    
+
     handleInput = (event) => {
         this.setState({
             currentItem: {
@@ -34,13 +34,13 @@ constructor(props) {
                 items: newItems,
                 currentItem: {
                     text: "",
-                    key:""
+                    key: ""
                 }
             })
         }
     }
 
-    deleteItem =(key) => {
+    deleteItem = (key) => {
         const filteredItems = this.state.items.filter(item => item.key !== key)
         this.setState({
             items: filteredItems
@@ -52,7 +52,7 @@ constructor(props) {
         return (
             <div className="todo">
                 <form className="to-do-form" onSubmit={this.addItem}>
-                    <input type="text" placeholder="Enter Text" value={this.state.currentItem.text} onChange={this.handleInput}/>
+                    <input type="text" placeholder="Enter Text" value={this.state.currentItem.text} onChange={this.handleInput} />
                     <button type="submit">Add Item</button>
                 </form>
                 <ListItems items={this.state.items} deleteItem={this.deleteItem}></ListItems>

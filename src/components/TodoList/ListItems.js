@@ -6,7 +6,7 @@ function ListItems(props) {
     const listItems = items.map(item => {
         return <div className="list" key={item.key}>
             <p>{item.text}
-                <span onClick={()=>props.deleteItem(item.key)}>X</span>
+                <span onClick={() => props.deleteItem(item.key)}>X</span>
             </p>
         </div>
     })
